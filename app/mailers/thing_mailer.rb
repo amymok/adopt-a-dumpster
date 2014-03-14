@@ -1,5 +1,5 @@
 class ThingMailer < ActionMailer::Base
-  default :from => "adoptahydrant@cityofboston.gov"
+  default :from => "sanantonio@codeforamerica.org"
 
   def reminder(thing)
     @thing = thing
@@ -7,7 +7,7 @@ class ThingMailer < ActionMailer::Base
     mail(
       {
         :to => thing.user.email,
-        :subject => ["Remember to shovel", thing.name].compact.join(' '),
+        :subject => ["Remember to wipe out graffiti", thing.name].compact.join(' '),
       }
     )
   end
