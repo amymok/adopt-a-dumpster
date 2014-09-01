@@ -1,23 +1,12 @@
-# Adopt-a-Hydrant
+# Adopt-a-Dumpster
 
-[![Build Status](http://img.shields.io/travis/codeforamerica/adopt-a-hydrant.svg)][travis]
-[![Dependency Status](http://img.shields.io/gemnasium/codeforamerica/adopt-a-hydrant.svg)][gemnasium]
-[![Coverage Status](http://img.shields.io/coveralls/codeforamerica/adopt-a-hydrant.svg)][coveralls]
-
-[travis]: http://travis-ci.org/codeforamerica/adopt-a-hydrant
-[gemnasium]: https://gemnasium.com/codeforamerica/adopt-a-hydrant
-[coveralls]: https://coveralls.io/r/codeforamerica/adopt-a-hydrant
-
-Claim responsibility for shoveling out a fire hydrant after it snows.
-
-## Screenshot
-![Adopt-a-Hydrant](https://github.com/codeforamerica/adopt-a-hydrant/raw/master/screenshot.png "Adopt-a-Hydrant")
+Claim responsibility for abating graffiti on a dumpster.
 
 ## Demo
 You can see a running version of the application at
-[http://adopt-a-hydrant.herokuapp.com/][demo].
+[http://adopt-a-dumpster.herokuapp.com/][demo].
 
-[demo]: http://adopt-a-hydrant.herokuapp.com/
+[demo]: http://adopt-a-dumpster.herokuapp.com/
 
 ## Installation
 This application requires [Postgres](http://www.postgresql.org/) to be installed
@@ -50,23 +39,13 @@ A successful deployment to Heroku requires a few setup steps:
     heroku config:set SECRET_TOKEN=the_token_you_generated
     ```
 
-3. [Precompile your assets](https://devcenter.heroku.com/articles/rails3x-asset-pipeline-cedar)
+3. Add a production database to config/database.yml
 
-    ```
-    RAILS_ENV=production bundle exec rake assets:precompile
-
-    git add public/assets
-
-    git commit -m "vendor compiled assets"
-    ```
-
-4. Add a production database to config/database.yml
-
-5. Seed the production db:
+4. Seed the production db:
 
     `heroku run bundle exec rake db:seed`
 
-6. Keep in mind that the Heroku free Postgres plan only allows up to 10,000 rows, so if your city has more than 10,000 fire hydrants (or other thing to be adopted), you will need to upgrade to the $9/month plan.
+5. Keep in mind that the Heroku free Postgres plan only allows up to 10,000 rows, so if your city has more than 10,000 fire dumpsters (or other thing to be adopted), you will need to upgrade to the $9/month plan.
 
 ## Contributing
 In the spirit of [free software][free-sw], **everyone** is encouraged to help
@@ -137,8 +116,4 @@ time of a major release, support for that Ruby version may be dropped.
 ## Copyright
 Copyright (c) 2014 Code for America. See [LICENSE][] for details.
 
-[license]: https://github.com/codeforamerica/adopt-a-hydrant/blob/master/LICENSE.md
-
-[![Code for America Tracker](http://stats.codeforamerica.org/codeforamerica/adopt-a-hydrant.png)][tracker]
-
-[tracker]: http://stats.codeforamerica.org/projects/adopt-a-hydrant
+[license]: https://github.com/codeforamerica/adopt-a-dumpster/blob/master/LICENSE.md
