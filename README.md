@@ -11,8 +11,8 @@ You can see a running version of the application at
 ## Installation
 This application requires [Postgres](http://www.postgresql.org/) to be installed
 
-    git clone git://github.com/codeforamerica/adopt-a-hydrant.git
-    cd adopt-a-hydrant
+    git clone git://github.com/amymok/adopt-a-dumpster.git
+    cd adopt-a-dumpster
     bundle install
 
     bundle exec rake db:create
@@ -45,7 +45,7 @@ A successful deployment to Heroku requires a few setup steps:
 
     `heroku run bundle exec rake db:seed`
 
-5. Keep in mind that the Heroku free Postgres plan only allows up to 10,000 rows, so if your city has more than 10,000 fire dumpsters (or other thing to be adopted), you will need to upgrade to the $9/month plan.
+5. Keep in mind that the Heroku free Postgres plan only allows up to 10,000 rows, so if your city has more than 10,000 dumpsters (or other thing to be adopted), you will need to upgrade to the $9/month plan.
 
 ## Contributing
 In the spirit of [free software][free-sw], **everyone** is encouraged to help
@@ -68,8 +68,8 @@ Here are some ways *you* can contribute:
 * by reviewing patches
 * [financially][]
 
-[locales]: https://github.com/codeforamerica/adopt-a-hydrant/tree/master/config/locales
-[issues]: https://github.com/codeforamerica/adopt-a-hydrant/issues
+[locales]: https://github.com/amymok/adopt-a-dumpster/tree/master/config/locales
+[issues]: https://github.com/amymok/adopt-a-dumpster/issues
 [financially]: https://secure.codeforamerica.org/page/contribute
 
 ## Submitting an Issue
@@ -116,4 +116,4 @@ time of a major release, support for that Ruby version may be dropped.
 ## Copyright
 Copyright (c) 2014 Code for America. See [LICENSE][] for details.
 
-[license]: https://github.com/codeforamerica/adopt-a-dumpster/blob/master/LICENSE.md
+[license]: https://github.com/amymok/adopt-a-dumpster/blob/master/LICENSE.md
